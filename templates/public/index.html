@@ -1,0 +1,113 @@
+{% extends 'public/base.html' %}
+{% load static %}
+{% block content %}
+
+	<main class="bg-gray-100">
+		<section class="lg:h-screen border bg-cover p-4 text-center rounded-bl-lg rounded-br-lg bg-no-repeat"  style="background-image: url({% static 'imgs/bg2.jpg' %})">
+		
+				<div class=" mt-24 mb-24 lg:mt-40 bg-black bg-opacity-50 p-4">
+					<span class="text-white font-bold text-4xl lg:text-5xl block" >Technology has taken over the world and everyone deserves to know and have the skills</span>
+					<span class="block text-white font-bold">" Bringing Hope to Africa . "</span>
+					<a href="{% url 'about' %}#member"><button class="mt-12 text-white p-2 pl-6 pr-6 border border-white hover:bg-blue-600 hover:text-white focus:shadow focus:bg-black font-bold">Join Us</button></a>
+				</div>
+			
+		</section>
+		<section class="pb-4 border-b"><!-- cards --->
+			<div class="text-gray-800 p-4 lg:p-10 lg:gap-10 lg:flex"><!-- section body -->
+				<div class=" block border bg-white rounded-lg shadow-lg shadow p-2 mb-4">
+					<div class="p-4 h-24 text-center border-b mb-3">
+						<span class="font-bold text-lg lg:text-2xl ">CREATIVITY</span>
+					</div>
+					<div class="text-center p-6">
+						<span>Explore the creativity in our arsenal. We encourage creativity when it come to solving problems and thus all our members are provided with the content and guidance to hit our hallmark of creativity</span>
+					</div>
+				</div>
+				<div class="border bg-white  rounded-lg shadow-lg shadow p-2 mb-4">
+					<div class="p-4 h-24 text-center border-b mb-3">
+						<span class="font-bold text-2xl">INNOVATION</span>
+					</div>
+					<div class="text-center p-6">
+						<span>Centered around solving the problems faced in The country as well as Africa as a whole Check out some of the innovative proposed solutions members of this innitiative came out with.</span>
+					</div>
+				</div>
+				<div class="border  bg-white  rounded-lg shadow-lg shadow p-2 mb-4">
+					<div class="p-4 h-24 text-center border-b mb-3">
+						<span class="font-bold text-2xl">COMMUNITY</span>
+					</div>
+					<div class="text-center p-6">
+						<span>Our numbers continue to grow exponentially since the inception of the program. Interract with the vast community made up of lots of Teachers, entrepreneurs and students who have benefitted from the various programs that we've held.</span>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		<section class="bg-cover" >
+			<div class="lg:mb-64 bg-cover" style="background-image: url({% static 'imgs/bg3.jpg' %});height: 400px;">
+				
+				<div class="hidden lg:block absolute text-center bg-white bg-opacity-100 mt-64 p-2" style="margin-left: 200px; width: 900px;">
+					<span class="text-gray-800 font-bold text-4xl lg:text-5xl block" style="font-family: Jubilat, Georgia, sans-serif;">Welcome to the Tech CEOs</span>
+					<p class="text-2xl text-gray-800 ">
+						 The future of Africa . We the Tech CEOs aim to produce the best of the working class the continent can produce. We put and contribute a lot into the realization of providing jobs for the mass public as well as encouraging our members to go out into the world and create more job opportunities for more of us. Africa is the Future and we are going to take her there.
+					</p>
+					<button class="mt-8 text-gray-800 p-2 pl-6 pr-6 border-2 border-black hover:bg-blue-600 hover:text-white focus:shadow focus:bg-black font-bold">Learn More about us</button>
+				</div>
+				
+			</div>
+			<div class="lg:hidden  bg-white bg-opacity-100 p-6">
+					<span class="text-gray-800 font-bold text-4xl lg:text-5xl block" >Welcome to the Tech CEOs</span>
+					<p class="text-2xl text-gray-800 ">
+						The future of Africa . We the Tech CEOs aim to produce the best of the working class the continent can produce. We put and contribute a lot into the realization of providing jobs for the mass public as well as encouraging our members to go out into the world and create more job opportunities for more of us. Africa is the Future and we are going to take her there.
+					</p>
+					<button class="mt-2 text-gray-800 p-2 pl-6 pr-6 border-2 border-black hover:bg-blue-600 hover:text-white focus:shadow focus:bg-black font-bold">Learn More about us</button>
+				</div>
+		</section>
+		<section class="">
+			<div class="lg:flex gap-10 mb-4 h-full">
+				<div class="bg-cover lg:w-1/2" >
+					<img src="{% static 'imgs/img0.jpg' %}" alt="image of a woman holding a laptop with a boy child">
+				</div>
+				<div class="p-4 lg:w-1/2 text-center">
+					<span class="font-bold text-gray-800 text-4xl mb-4">WHAT WE DO</span>
+					<span class="text-2xl text-gray-800 block">
+					<ul>
+						 	<li>Public Education about Imerging Technologies and careers</li>
+						 	<li>Humanitarian projects</li>
+						 	<li>Job Creation</li>
+						 	<li>App Development</li>
+						 	<li>GRaphic Designing</li>
+						 	<li>Web Designing</li>
+						 	<li>Social media marketting and management</li>
+						 </ul>
+					</span>
+					<button class="rounded-lg mt-6 text-gray-800 p-4 pl-6 pr-6 border-2 border-black hover:bg-blue-600 hover:text-white focus:shadow focus:bg-black font-bold">Contact Us</button>
+				</div>
+			</div>
+		</section>
+		<section class="">
+			<div class="lg:flex gap-0 mb-2 h-full">
+				
+				<div class="lg:w-1/2 bg-blue-500 text-white text-center p-6">
+					<div class="text-4xl mb-4 mt-16 ">
+						We are a community of 10,000 innovators nationwide, and over 100,000 toolkit users across the globe.
+					</div>
+				</div>
+				<div class="bg-cover lg:w-1/2" >
+					<img src="{% static 'imgs/img3.jpg' %}" alt="image of kids smiling">
+				</div>
+			</div>
+		</section>
+		<section class="">
+			<center>
+			<div class="w-full p-16">
+				<p class="text-3xl lg:text-5xl font-extrabold text-gray-800">"There is shared belief among innovators today that the current state is not okay, and we're in the position to do something about it."</p>
+				<a href="{% url 'about' %}#member"><button class="w-48	 mt-8 text-gray-800 p-2 pl-6 pr-6 border-2 border-black hover:bg-black hover:text-white focus:shadow focus:bg-black font-bold">Join us</button></a>
+			</div>
+		</center>
+		</section>
+	
+	</main>
+{% endblock %}
+
+{% block js %}
+	
+{% endblock %}

@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TechCeos</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+	<!--link rel="stylesheet" type="text/css" href="css/font-awesome.css"-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/ionicons/css/ionicons.min.css' %}">
+
+</head>
+<body>
+		<script type="text/javascript">
+		function openNav(){
+			let state  = document.getElementById("content") ;
+			if(state.className == "bg-gray-800 block"){
+				state.className = "hidden";
+			} else {
+				state.className = "bg-gray-800 block";
+			};
+			
+		}
+
+	</script>
+	{% include 'public/nav.html' %}
+	{% block content %}
+
+	{% endblock %}
+	{% include 'public/footer.html' %}
+	
+	{% block js %}
+
+	{% endblock %}
+
+</body>
+</html>	

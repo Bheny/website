@@ -1,0 +1,33 @@
+	<header class=" fixed z-10 w-full">
+		<nav class="flex bg-blue-800 p-2 bg-opacity-100 w-full">
+			<div class="container">
+				<!-- Icon or logo div -->
+				<div class="float-left">
+					<a href="{% url 'home' %}"><H3 class="text-xl text-white border-4 font-bold p-1">TECHCEOs</H3></a>
+				</div>
+				<!-- The nav links -->
+				<div class="float-right p-2 hidden lg:inline-block font-bold">
+					<a href="{% url 'home' %}"><span class="p-4 hover:text-blue-800 text-lg text-white mr-4">Home</span></a>	
+					<a href="{% url 'about' %}"><span class="p-2 hover:text-blue-800 text-lg text-white mr-4">About</span></a>
+			
+					<span class="p-2 hover:text-blue-800 text-lg text-white mr-4">Our Works</span>
+				</div>
+				<div class="float-right lg:hidden ">
+				<button class=" p-1 lg:hidden" onclick="openNav();">
+				<svg viewBox="0 0 20 20" fill="currentColor" class="menu w-8 h-8 text-lg text-white"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+				</button>
+			</div>
+			</div>
+			
+		</nav>
+		<div id="content" class="hidden">
+				<div>
+					<ul class="p-2 text-white font-bold">
+						<a href="{% url 'home' %}"><li class="p-4 hover:text-blue-600">Home</li></a>
+						<a href="{% url 'about' %}"><li class="p-4 hover:text-blue-600">About</li></a>
+						<a href="#follow" onclick="openNav();"><li class="p-4 hover:text-blue-600">Contact Us</li></a>
+						<a href="#" onclick="openNav();"><li class="p-4 hover:text-blue-600">Our Works</li></a>
+					</ul>
+				</div>
+			</div>
+	</header>

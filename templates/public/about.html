@@ -1,0 +1,219 @@
+{% extends 'public/base.html' %}
+{% load static %}
+{% block content %}
+	<main class="bg-gray-100">	
+		<section class=" bg-cover border border-white" >
+			<div class="pt-48 lg:mb-64 bg-cover" style="background-image: url({% static 'imgs/bg3.jpg' %});height: 500px;">
+				<div class=" p-4 h-full bg-black bg-opacity-25 text-center h-48 w-full">
+					<h2 class="text-5xl text-white font-extrabold">About The CEOs</h2>
+				</div>
+				<div class="hidden lg:block absolute  bg-white bg-opacity-100 border -mt-40 p-6" style="margin-left: 50px; width: 700px;">
+					<span class="text-gray-800 text-4xl lg:text-4xl block" >Transforming the industry by producing the best innovative and Entreprenuer Mindsets in Africa</span>
+					<p class="text-xl text-gray-800 ">
+						 Tech CEOs is a group of brilliant youths who have acquired skills in App development, web development, graphic designing, video editting, social media marketting and business administration, who have come together to form a team in order to develop unique ideas and solve already existing and emerging problems in the society at large with technology.
+					</p>
+					
+				</div>
+
+				<div class="hidden lg:block absolute bg-white border bg-opacity-100  text-gray-900 -mt-40 p-1" style="margin-left: 800px; width: 400px;">
+					<div class="bg-cover ">
+					<img src="{% static 'imgs/img1.jpg' %}">
+					</div>
+					<div class="p-6">
+						<span class="text-lg font-bold">Enter your Email to recieve and read stories about innovators who are creating change in the industry</span>
+						<form action="{% url 'newsletter:subscribe' %}" method="POST" class="mt-12">{% csrf_token %}
+						
+							<label>EMAIL ADDRESS <I class="text-red-600">*</I></label>
+							<input type="email" name="email" class="border-b border-black p-2 w-full focus:border-t">
+							<button type="submit" class="mt-6 text-gray-800 p-2 pl-6 pr-6 border-2 border-black hover:bg-blue-600 hover:text-white focus:shadow focus:bg-black font-bold">Send me stories</button>
+						</form>
+					</div>
+				</div>
+
+				
+			</div>
+			<div id="member" class="lg:hidden bg-white text-gray-900 bg-opacity-25 p-1">
+					<div class="bg-cover ">
+					<img src="{% static 'imgs/img1.jpg' %}">
+					</div>
+					<div class="p-6">
+						<span class="text-lg font-bold">Enter your Email to recieve and read stories about innovators who are creating change in the industry</span>
+
+						<form class="mt-12">
+							<label>EMAIL ADDRESS <I class="text-red-600">*</I></label>
+							<input type="email" name="email" class="border-b border-black p-2 w-full">
+							<button class="mt-6 text-gray-800 p-2 pl-6 pr-6 border-2 border-black hover:bg-blue-600 hover:text-white focus:shadow focus:bg-black font-bold">Send Me Stories</button>
+						</form>
+					</div>
+				</div>
+				<div class="lg:hidden bg-white bg-opacity-100 border p-6">
+					<span class="text-gray-800 text-4xl lg:text-4xl block" >Transforming the industry by producing the best innovative and Entreprenuer Mindsets in Africa</span>
+					<p class="text-xl text-gray-800 ">
+						 		 Tech CEOs is a group of brilliant youths who have acquired skills in App development, web development, graphic designing, video editting, social media marketting and business administration, who have come together to form a team in order to develop unique ideas and solve already existing and emerging problems in the society at large with technology.
+					</p>
+					
+				</div>
+				
+		</section>
+		<section class="bg-gray-200 mt-48">
+			<div class="p-4">
+				<div class="text-center ">
+					<span class="text-3xl lg:text-5xl font-bold text-gray-800">OUR MISSION</span>
+				</div>
+				<div class="lg:pl-40 lg:pr-40 mt-6 mb-10 text-center">
+					<span class="text-2xl text-gray-800 block">
+						 <ul >
+						 	<li class="mb-6">Establish a regional, Municipal and District teams</li>
+						 	<li class="mb-6">Building an open investor platform across Africa.</li>
+						 	<li class="mb-6">Ensure that every African child that can read and write is skilled in I.T</li>
+						 	<li class="mb-6">Become one of the Tech teams in Africa and Beyond</li>
+						 	
+						 </ul>
+					</span>
+					<button class="mt-6 text-gray-800 p-4 pl-6 pr-6 border-2 border-black hover:bg-blue-600 hover:text-white focus:shadow focus:bg-black font-bold">Join Us</button>
+				</div>
+				<div class="lg:p-32">
+					<div class="text-center mb-3">
+					<span class="text-3xl lg:text-5xl font-bold text-gray-800">MEET THE TEAM</span>
+					</div>
+				<div class="lg:grid lg:grid-cols-3 gap-10">
+					<div class="border rounded-lg  bg-white mb-4">
+						<div class="w-full">
+							<img src="{% static 'imgs/john.jpg' %}" class=" w-full h-64">
+						</div>
+						<div class="p-4">
+							<div class="mb-4">
+								<span class="text-gray-800 text-sm">FOUNDER</span>
+							</div>
+							<div class="mb-4">
+								<span class="text-gray-900 text-2xl">John  Komla Agbley </span>
+							</div>
+
+							<div class="mb-4">
+								<span class="text-gray-800 text-md">Some text in div</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="border rounded-lg  bg-white mb-4">
+						<div class="w-full bg-contain">
+							<img src="{% static 'imgs/awal.jpg' %}" class="w-full h-64 ">
+						</div>
+						<div class="p-4">
+							<div class="mb-4">
+								<span class="text-gray-800 text-sm">GRAPHIC DESIGNER</span>
+							</div>
+							<div class="mb-4">
+								<span class="text-gray-900 text-2xl">Nuriya Awal</span>
+							</div>
+
+							<div class="mb-4">
+								<span class="text-gray-800 text-md">Some text in div</span>
+							</div>
+						</div>
+					</div>
+					<div class="border rounded-lg bg-white mb-4">
+						<div class="w-full">
+							<img src="{% static 'imgs/kwame.jpg' %}" class="h-64 w-full">
+						</div>
+						<div class="p-4">
+							<div class="mb-4">
+								<span class="text-gray-800 text-sm">SOCIAL MEDIA MARKETER</span>
+							</div>
+							<div class="mb-4">
+								<span class="text-gray-900 text-2xl">Kwame Quayson </span>
+							</div>
+
+							<div class="mb-4">
+								<span class="text-gray-800 text-md">Some text in div</span>
+							</div>
+						</div>
+					</div>
+					<div class="border rounded-lg  bg-white mb-4">
+						<div class="w-full">
+							<img src="{% static 'imgs/deen.jpg' %}" class="w-full h-64 bg-cover">
+						</div>
+						<div class="p-4 ">
+							<div class="mb-4">
+								<span class="text-gray-800 text-sm">SOCIAL MEDIA MARKETER , ENTREPRENEUR</span>
+								
+							</div>
+							<div class="mb-4">
+								<span class="text-gray-900 text-2xl">Jibril Deen</span>
+							</div>
+
+							<div class="mb-4">
+								<span class="text-gray-800 text-md">dummy text</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="border rounded-lg bg-white mb-4">
+						<div class="w-full">
+							<img src="{% static 'imgs/moh.jpg' %}" class="w-full h-64">
+						</div>
+						<div class="p-4">
+							<div class="mb-4">
+								<span class="text-gray-800 text-sm">GRAPHIC AND VIDEO, ENTREPRENEUR</span>
+							</div>
+							<div class="mb-4">
+								<span class="text-gray-900 text-2xl">Mohammed</span>
+							</div>
+
+							<div class="mb-4">
+								<span class="text-gray-800 text-md">Some text in div</span>
+							</div>
+						</div>
+					</div>
+					<div class="border rounded-lg bg-white mb-4">
+						<div class="w-full">
+							<img src="{% static 'imgs/raph.jpg' %}" class="w-full h-64">
+						</div>
+						<div class="p-4">
+							<div class="mb-4">
+								<span class="text-gray-800 text-sm">APP DEVELOPER, ENTREPRENEUR</span>
+							</div>
+							<div class="mb-4">
+								<span class="text-gray-900 text-2xl">Raphael Erbynn</span>
+							</div>
+
+							<div class="mb-4">
+								<span class="text-gray-800 text-md">Some text in div</span>
+							</div>
+						</div>
+					</div>	
+					<div class="border rounded-lg  bg-white mb-4">
+						<div class="w-full">
+							<img src="{% static 'imgs/ben.jpg' %}" class="w-full h-64 bg-cover">
+						</div>
+						<div class="p-4 ">
+							<div class="mb-4">
+								<span class="text-gray-800 text-sm">WEB DEVELOPER, ENTREPRENEUR</span>
+								
+							</div>
+							<div class="mb-4">
+								<span class="text-gray-900 text-2xl">Bernard Kodzo Tay</span>
+							</div>
+
+							<div class="mb-4">
+								<span class="text-gray-800 text-md">dummy text</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				</div> 
+			</div>
+		</section>
+		<section class="">
+			<div class="text-center p-12 lg:p-20">
+				<div class="lg:m-32">
+					<p class="text-5xl text-gray-800">Thank you to our partners who support the Tech CEOs</p>
+				</div>
+				<div>
+					
+				</div>
+			</div>
+		</section>
+	</main>
+{% endblock %}
